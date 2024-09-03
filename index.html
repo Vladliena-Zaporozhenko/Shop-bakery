@@ -24,7 +24,9 @@
               <li><a class="link" href="#contact-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -175,7 +177,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -270,5 +272,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+        <h2>Замовити дзвінок</h2>
+        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <form name="modal-form" autocomplete="off">
+          <input type="text" />
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
